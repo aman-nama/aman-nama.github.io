@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: font_hm;
+    font-weight: 100;
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+    /*    overflow: hidden;*/
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    /*        background: #E6E6E9;*/
+    min-width: 1500px;
+}
+
+
+.item19 {
+    height: 80%;
+    width: 80%;
+    background-color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    padding: 40px;
+    padding-top: 110px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    border-radius: 10px;
+    height: 600px;
+}
+
+.box .inputBox {
+    position: relative;
+
+}
+
+.box .inputBox input {
+
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    background: transparent;
+    transition: 1s;
+
+}
+
+.box .inputBox label {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding: 10px 0;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.box .inputBox input:focus,
+.box .inputBox input:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+    top: -22px;
+    left: 0px;
+    color: var(--primary-color);
+    font-size: 12px;
+}
+
+
+.box input[type="submit"] {
+    margin-top: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #aaa;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-shadow:  -1px -1px 8px rgba(255, 255, 255, 0.1),
+         3px 4px 16px rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    transition: 0.5s;
+}
+
